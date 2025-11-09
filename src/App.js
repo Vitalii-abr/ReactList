@@ -1,7 +1,8 @@
-import UsersList from "./components/UasersList/UsersList";
+import React from "react";
+import SignUpForm from "./SignUpForm";
 
 function App() {
-  return <UsersList />;
+  return <SignUpForm />;
 }
 
 export default App;
