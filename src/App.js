@@ -1,8 +1,12 @@
 import React from "react";
-import SignUpForm from "./SignUpForm";
+import UsersLoader from "./components/UsersLoader/UsersLoader";
 
 function App() {
-  return <SignUpForm />;
+  return (
+    <div className="App">
+      <UsersLoader />
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,32 @@
+.user-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  border: 3px solid #ccc;
+
+  img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+
+  p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
+
+  &.male {
+    border-color: #1e90ff;
+  }
+
+  &.female {
+    border-color: #ff69b4;
+  }
+}
