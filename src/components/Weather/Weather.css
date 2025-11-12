@@ -1,0 +1,64 @@
+.weather {
+  background: #f7f9fb;
+  border-radius: 12px;
+  padding: 20px;
+  width: 340px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.weather__title {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.weather__selectors {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.weather__selectors label {
+  font-size: 0.9rem;
+}
+
+.weather__selectors label select {
+  margin-left: 6px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.weather__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperature, .wind {
+  display: flex;
+  align-items: center;
+}
+
+.temperature__icon, .wind__icon {
+  margin-right: 8px;
+  font-size: 1.3rem;
+}
+
+.temperature__value, .temperature__text, .wind__value, .wind__text {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

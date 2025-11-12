@@ -1,10 +1,10 @@
 import React from "react";
-import UsersLoader from "./components/UsersLoader/UsersLoader";
+import Weather from "./components/Weather/Weather";
 
 function App() {
   return (
-    <div className="App">
-      <UsersLoader />
+    <div>
+      <Weather />
     </div>
   );
 }
