@@ -5,7 +5,7 @@
   width: 340px;
   margin: 40px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: "Segoe UI", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
 
@@ -38,17 +38,22 @@
   align-items: center;
 }
 
-.temperature, .wind {
+.temperature,
+.wind {
   display: flex;
   align-items: center;
 }
 
-.temperature__icon, .wind__icon {
+.temperature__icon,
+.wind__icon {
   margin-right: 8px;
   font-size: 1.3rem;
 }
 
-.temperature__value, .temperature__text, .wind__value, .wind__text {
+.temperature__value,
+.temperature__text,
+.wind__value,
+.wind__text {
   font-size: 1.1rem;
   font-weight: 500;
 }

@@ -1,12 +1,12 @@
-import { users } from "./users";
-import UserListItem from "./UserListItem";
+import { users } from './users'
+import UserListItem from './UserListItem'
 
-function UsersList() {
+function UsersList () {
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{ padding: '20px' }}>
       <h2>Users List</h2>
 
-      {users.map((user) => (
+      {users.map(user => (
         <UserListItem
           key={user.id}
           firstName={user.firstName}
@@ -16,7 +16,7 @@ function UsersList() {
         />
       ))}
     </div>
-  );
+  )
 }
 
-export default UsersList;
+export default UsersList

@@ -1,8 +1,8 @@
-import React from "react";
-import "./UserCard.scss";
+import React from 'react'
+import './UserCard.scss'
 
-function UserCard({ user }) {
-  const { name, picture, gender, location } = user;
+function UserCard ({ user }) {
+  const { name, picture, gender, location } = user
 
   return (
     <div className={`user-card ${gender}`}>
@@ -10,10 +10,10 @@ function UserCard({ user }) {
       <h3>
         {name.first} {name.last}
       </h3>
-      <p>Стать: {gender === "male" ? "👨‍🦱" : "👩‍🦰"}</p>
+      <p>Стать: {gender === 'male' ? '👨‍🦱' : '👩‍🦰'}</p>
       <p>Країна: {location.country}</p>
     </div>
-  );
+  )
 }
 
-export default UserCard;
+export default UserCard

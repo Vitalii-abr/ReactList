@@ -1,53 +1,53 @@
-import React, { useState } from "react";
-import "./SignUpForm.css";
+import React, { useState } from 'react'
+import './SignUpForm.css'
 
-function SignUpForm() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+function SignUpForm () {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault()
 
-    const formData = { name, email, password };
-    console.log("Form submitted:", formData);
+    const formData = { name, email, password }
+    console.log('Form submitted:', formData)
 
-    setName("");
-    setEmail("");
-    setPassword("");
-  };
+    setName('')
+    setEmail('')
+    setPassword('')
+  }
 
   return (
-    <form className="signup-form" onSubmit={handleSubmit}>
+    <form className='signup-form' onSubmit={handleSubmit}>
       <h2>Sing Up</h2>
 
       <input
-        type="text"
-        placeholder="Name"
+        type='text'
+        placeholder='Name'
         value={name}
-        onChange={(e) => setName(e.target.value)}
+        onChange={e => setName(e.target.value)}
         required
       />
 
       <input
-        type="email"
-        placeholder="Email"
+        type='email'
+        placeholder='Email'
         value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        onChange={e => setEmail(e.target.value)}
         required
       />
 
       <input
-        type="password"
-        placeholder="Password"
+        type='password'
+        placeholder='Password'
         value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={e => setPassword(e.target.value)}
         required
       />
 
-      <button type="submit">Register</button>
+      <button type='submit'>Register</button>
     </form>
-  );
+  )
 }
 
-export default SignUpForm;
+export default SignUpForm

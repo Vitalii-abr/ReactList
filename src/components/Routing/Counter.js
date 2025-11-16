@@ -1,3 +1,3 @@
-export default function Counter() {
-  return <h2>Counter Component</h2>;
+export default function Counter () {
+  return <h2>Counter Component</h2>
 }
